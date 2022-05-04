@@ -1,0 +1,5 @@
+@use 'colors' as c;
+@use 'fonts' as f;
+* {
+    font-size: f.$font-size;
+}
