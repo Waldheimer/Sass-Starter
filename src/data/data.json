@@ -1,0 +1,258 @@
+{
+    "_name": "Timetable",
+    "_speed": 1.0,
+    "_entities": [
+        "entity001",
+        "entity002",
+        "motion1",
+        "power1",
+        "Home"
+    ],
+    "_automations": [
+        "licht_an",
+        "licht_aus"
+    ],
+    "_services": [
+        "turn_on",
+        "turn_off",
+        "trigger",
+        "call_service",
+        "automation_triggered"
+    ],
+    "_events": [
+        {
+            "when": "2023-05-03T15:55:49.301924+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "entity002",
+            "domain": "switch",
+            "service": "turn_on",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T15:55:52.004784+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "entity002",
+            "domain": "switch",
+            "service": "turn_off",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T15:59:25.510079+02:00",
+            "eventType": "Automation Trigger Service Call",
+            "source": "Home",
+            "target": "licht_an",
+            "domain": "automation",
+            "service": "trigger",
+            "state": ""
+        },
+        {
+            "when": "2023-05-03T15:59:25.616557+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_an",
+            "target": "entity002",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T15:59:32.986635+02:00",
+            "eventType": "Automation Trigger Service Call",
+            "source": "Home",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "trigger",
+            "state": ""
+        },
+        {
+            "when": "2023-05-03T15:59:33.076329+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_aus",
+            "target": "entity002",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T16:02:13.84782+02:00",
+            "eventType": "Device Triggered Automation Call",
+            "source": "entity001_occupancy",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "trigger",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T16:13:29.792379+02:00",
+            "eventType": "Device Triggered Automation Call",
+            "source": "entity001_occupancy",
+            "target": "licht_an",
+            "domain": "automation",
+            "service": "trigger",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T16:13:29.869625+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_an",
+            "target": "entity002",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T16:13:54.677267+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "licht_an",
+            "domain": "automation",
+            "service": "turn_off",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T16:17:09.948088+02:00",
+            "eventType": "Device Triggered Automation Call",
+            "source": "entity001_occupancy",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "trigger",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T16:17:10.03747+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_aus",
+            "target": "entity002",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T16:17:16.897983+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "turn_off",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T20:19:21.910102+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "licht_an",
+            "domain": "automation",
+            "service": "turn_on",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T20:19:23.897068+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "turn_on",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T20:25:09.25166+02:00",
+            "eventType": "Automation Trigger Service Call",
+            "source": "Home",
+            "target": "licht_an",
+            "domain": "automation",
+            "service": "trigger",
+            "state": ""
+        },
+        {
+            "when": "2023-05-03T20:25:09.337918+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_an",
+            "target": "power1",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T20:25:13.699952+02:00",
+            "eventType": "Automation Trigger Service Call",
+            "source": "Home",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "trigger",
+            "state": ""
+        },
+        {
+            "when": "2023-05-03T20:25:13.788514+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_aus",
+            "target": "power1",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T20:25:41.755523+02:00",
+            "eventType": "Device Triggered Automation Call",
+            "source": "motion1_occupancy",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "trigger",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T20:25:49.585957+02:00",
+            "eventType": "Device Triggered Automation Call",
+            "source": "motion1_occupancy",
+            "target": "licht_an",
+            "domain": "automation",
+            "service": "trigger",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T20:25:49.670649+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_an",
+            "target": "power1",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "on"
+        },
+        {
+            "when": "2023-05-03T20:28:31.295586+02:00",
+            "eventType": "Device Triggered Automation Call",
+            "source": "motion1_occupancy",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "trigger",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T20:28:31.369588+02:00",
+            "eventType": "Automation Called Device Trigger",
+            "source": "licht_aus",
+            "target": "power1",
+            "domain": "automation",
+            "service": "automation_triggered",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T20:28:45.052117+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "licht_an",
+            "domain": "automation",
+            "service": "turn_off",
+            "state": "off"
+        },
+        {
+            "when": "2023-05-03T20:28:46.882424+02:00",
+            "eventType": "Direct Device Service Call",
+            "source": "Home",
+            "target": "licht_aus",
+            "domain": "automation",
+            "service": "turn_off",
+            "state": "off"
+        }
+    ]
+}
